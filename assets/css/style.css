@@ -170,8 +170,23 @@ a {
 .clients .images {
     display: flex;
     justify-content: space-around;
-    margin-top: 70px;
     align-items: center;
+    margin-top: 70px;
+}
+
+.clients .images a {
+    /* vì thẻ a nên muốn set height phải display: inline-block/block/flex; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Chiều cao hình ảnh khác nhau nên set height chung thay vì padding top/bottom tránh việc chiều cao các thẻ khác nhau*/
+    height: 90px;
+    padding: 0 32px;
+    border-radius: 12px;
+}
+
+.clients .images a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ===================== Guides ===================== */
@@ -631,4 +646,6 @@ NHỚ THÊM display: block / inline-block;
 - Những nội dung có thể rất dài (thẻ h3, thẻ p) thì chú ý thêm line-clamp để giới hạn số dòng hiển thị và hiển thị dấu 3 chấm
 
 - Thẻ cha có thuộc tính display: flex; thì thẻ con inline có thể set width/height.
+
+- Trong html thẻ nào không set màu thì màu mặc định là màu đen (#000000)
 */
