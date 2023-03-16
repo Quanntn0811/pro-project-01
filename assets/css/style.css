@@ -563,6 +563,10 @@ a {
     padding: 50px 0 58px;
 }
 
+.footer .row {
+    gap: 185px;
+}
+
 .footer .title {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -582,10 +586,10 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     color: #7a7a7e;
+    white-space: nowrap;
 }
 
 .footer .desc {
-    width: 257px;
     margin-top: 40px;
     font-weight: 400;
     font-size: 1.6rem;
@@ -604,9 +608,12 @@ a {
     justify-content: center;
     width: 28px;
     height: 28px;
-    margin-right: 16px;
     border-radius: 3px;
     background: #f9f9f9;
+}
+
+.footer .social-link + .social-link {
+    margin-left: 16px;
 }
 
 .footer .social-link:hover {
@@ -614,6 +621,7 @@ a {
 }
 
 .footer .row-copyright {
+    align-items: center;
     margin-top: 81px;
 }
 
