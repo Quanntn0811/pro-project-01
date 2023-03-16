@@ -6,6 +6,12 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    /* Mỗi trình duyệt khác nhau có thể hiển thị thanh cuộn ở html hoặc body nên tốt nhất cho cả 2 thuộc tính này */
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -64,12 +70,6 @@ a {
     z-index: 1;
 }
 
-.hero-wrap {
-    position: relative;
-    background: #e6f0ff;
-    height: 100vh;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -109,6 +109,12 @@ a {
     padding: 13px 16px;
     margin-left: 18px;
     border-radius: 8px;
+}
+
+.hero-wrap {
+    position: relative;
+    background: #e6f0ff;
+    height: calc(100vh - 90px);
 }
 
 .hero {
